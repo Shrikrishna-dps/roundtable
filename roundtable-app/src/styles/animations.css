@@ -1,0 +1,44 @@
+/* Soft pulse used by live intelligence indicators */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Vertical entrance used when an answer panel changes */
+@keyframes rt-answer-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Live status indicator animation */
+.rt-dot--pulse {
+  animation: pulse-glow 1.8s ease-in-out infinite;
+}
+
+/* Applied to newly displayed answer content */
+.rt-answer-enter {
+  animation: rt-answer-in 320ms ease-out both;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .rt-dot--pulse,
+  .rt-answer-enter {
+    animation: none;
+  }
+}

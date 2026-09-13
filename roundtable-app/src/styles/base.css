@@ -1,0 +1,45 @@
+/* Local Geist variable font used across the site */
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist[wght].woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base document styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--rt-void);
+  color: var(--rt-ink);
+  font-family: "Geist", sans-serif;
+  line-height: 1.5;
+}
+
+/* Headings use tighter spacing for the product's editorial look */
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+/* Links inherit the surrounding text unless a component styles them */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Buttons and form controls use the site's font */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
