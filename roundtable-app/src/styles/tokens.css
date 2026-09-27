@@ -1,0 +1,51 @@
+/* Core colors used throughout the Roundtable interface */
+
+:root {
+  /* Background surfaces */
+  --rt-void: #05070d;
+  --rt-dark: #080c14;
+  --rt-dark-muted: #64748b;
+  --rt-paper: #05070d;
+  --rt-paper-warm: #0a0e1a;
+
+  /* Glassmorphic card surfaces */
+  --rt-surface-0: rgba(8, 12, 22, 0.7);
+  --rt-surface-1: rgba(13, 20, 36, 0.65);
+  --rt-surface-2: rgba(20, 30, 52, 0.85);
+  --rt-surface-card: rgba(15, 23, 42, 0.6);
+
+  /* Main text and secondary text */
+  --rt-ink: #f8fafc;
+  --rt-muted: #94a3b8;
+
+  /* Subtle borders used around cards and controls */
+  --rt-border: rgba(148, 163, 184, 0.12);
+  --rt-border-bright: rgba(148, 163, 184, 0.28);
+
+  /* Cyan = live activity and real-time intelligence */
+  --rt-cyan: #38bdf8;
+  --rt-cyan-soft: #7dd3fc;
+  --rt-cyan-glow: rgba(56, 189, 248, 0.35);
+  --rt-cyan-bg: rgba(56, 189, 248, 0.1);
+
+  /* Amber = attention and unresolved commitments */
+  --rt-amber: #f59e0b;
+  --rt-amber-soft: #fcd34d;
+  --rt-amber-glow: rgba(245, 158, 11, 0.35);
+  --rt-amber-bg: rgba(245, 158, 11, 0.12);
+
+  /* Green = resolution and assigned ownership */
+  --rt-green: #34d399;
+  --rt-green-soft: #6ee7b7;
+  --rt-green-glow: rgba(52, 211, 153, 0.35);
+  --rt-green-bg: rgba(52, 211, 153, 0.12);
+
+  /* Shared depth and glow effects */
+  --rt-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  --rt-shadow-glow: 0 0 35px rgba(56, 189, 248, 0.15);
+
+  /* Global layout values */
+  --nav-h: 72px;
+  --card-gap: 16px;
+  --radius-card: 14px;
+}
