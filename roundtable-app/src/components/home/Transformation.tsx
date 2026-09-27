@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 // Scroll-driven transformation turns loose conversation fragments into owned work
 function Transformation({ data }: { data: any }) {
   const sectionRef = useRef<HTMLElement>(null);
